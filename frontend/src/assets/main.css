@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+#app {
+  min-height: 100vh;
+}
