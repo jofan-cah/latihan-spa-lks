@@ -47,7 +47,11 @@ function logout() {
       </nav>
 
       <div class="sidebar-footer">
-        <p class="sidebar-user">{{ user.name }}<span>{{ user.role }}</span></p>
+        <RouterLink to="/profil" style="text-decoration:none;">
+          <p class="sidebar-user" style="cursor:pointer; padding:6px 8px; border-radius:8px; transition:background .15s;" @mouseenter="e=>e.currentTarget.style.background='#f8fafc'" @mouseleave="e=>e.currentTarget.style.background='transparent'">
+            {{ user.name }}<span>{{ user.role }} · Lihat Profil</span>
+          </p>
+        </RouterLink>
         <button class="btn-logout" @click="logout">Logout</button>
       </div>
     </aside>

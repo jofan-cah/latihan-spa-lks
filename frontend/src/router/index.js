@@ -22,6 +22,14 @@ const routes = [
     component: () => import('@/views/ManajemenKasirView.vue'),
     meta: { requiresAuth: true, role: 'admin' },
   },
+  {
+    path: '/profil',
+    component: () => import('@/views/ProfilView.vue'),
+    meta: { requiresAuth: true },
+  },
+  { path: '/order',        component: () => import('@/views/OrderView.vue') },
+  { path: '/order/sukses', component: () => import('@/views/OrderSuksesView.vue') },
+  { path: '/antrian',      component: () => import('@/views/AntrianView.vue') },
 ]
 
 const router = createRouter({ history: createWebHistory(), routes })
